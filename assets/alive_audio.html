@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Training Visualization Final Update</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f6f8;
+            margin: 0;
+        }
+        .chart-card {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            width: 900px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="chart-card">
+    <svg viewBox="0 0 880 520" xmlns="http://www.w3.org/2000/svg">
+        
+        <!-- ================= LEGEND (图例：更新文案与间距) ================= -->
+        <g transform="translate(60, 30)">
+            <!-- 1. Ideal -> Asymmetric LR -->
+            <line x1="0" y1="0" x2="30" y2="0" stroke="#6c5ce7" stroke-width="3" />
+            <text x="40" y="5" font-size="11" font-weight="bold" fill="#6c5ce7">Audio Quality (Asymmetric LR)</text>
+
+            <!-- 2. Symmetric LR -> Data Shift & Large Audio LR -->
+            <line x1="230" y1="0" x2="260" y2="0" stroke="#d63031" stroke-width="3" stroke-dasharray="6,4" />
+            <text x="270" y="5" font-size="11" font-weight="bold" fill="#d63031">Audio Degradation(Data Shift with Incompatible LR)</text>
+
+            <!-- 3. AV Synchronization -->
+            <line x1="570" y1="0" x2="600" y2="0" stroke="#00b894" stroke-width="3" />
+            <text x="610" y="5" font-size="11" font-weight="bold" fill="#00b894">Audio-Video Sync</text>
+        </g>
+
+        <!-- ================= CHART BACKGROUND (背景区域) ================= -->
+        <!-- Phase 1 Area -->
+        <rect x="50" y="80" width="250" height="300" fill="#f0f4ff" opacity="0.6" />
+        <!-- Phase 2 Area -->
+        <rect x="300" y="80" width="500" height="300" fill="#fffcf0" opacity="0.6" />
+
+        <!-- Phase Divider Line (虚线分割) -->
+        <line x1="300" y1="80" x2="300" y2="380" stroke="#999" stroke-dasharray="6,6" stroke-width="1.5" />
+
+        <!-- Axes (坐标轴) -->
+        <line x1="50" y1="80" x2="50" y2="380" stroke="#333" stroke-width="2" />
+        <line x1="50" y1="380" x2="800" y2="380" stroke="#333" stroke-width="2" />
+
+        <!-- Phase Labels (底部阶段文字) -->
+        <text x="175" y="370" text-anchor="middle" font-size="14" font-weight="bold" fill="#666" opacity="0.5">Phase 1: Audio Training</text>
+        <text x="550" y="370" text-anchor="middle" font-size="14" font-weight="bold" fill="#666" opacity="0.5">Phase 2: Joint Training</text>
+
+        <!-- ================= DATA SCALE (底部阶梯图) ================= -->
+        <g transform="translate(0, 410)">
+            <!-- Phase 1: Massive Block -->
+            <rect x="50" y="0" width="250" height="50" fill="#f1f5f9" stroke="#cbd5e1" rx="2" />
+            <text x="175" y="65" font-size="13" fill="#475569" font-weight="600" text-anchor="middle">Massive Audio Data</text>
+
+            <!-- Phase 2: Hierarchical Steps (Uniform Color) -->
+            <!-- Step 1 -->
+            <rect x="305" y="10" width="160" height="40" fill="#f1f5f9" stroke="#cbd5e1" rx="2" />
+            <!-- Step 2 -->
+            <rect x="470" y="20" width="160" height="30" fill="#f1f5f9" stroke="#cbd5e1" rx="2" />
+            <!-- Step 3 -->
+            <rect x="635" y="30" width="165" height="20" fill="#f1f5f9" stroke="#cbd5e1" rx="2" />
+
+            <!-- Text Label for Hierarchy -->
+            <text x="550" y="65" font-size="13" fill="#475569" font-weight="600" text-anchor="middle">Hierarchical SFT Audio-Video Data</text>
+            
+            <!-- Connecting dashed lines -->
+            <line x1="300" y1="-30" x2="300" y2="0" stroke="#ccc" stroke-dasharray="4,4" />
+        </g>
+
+        <!-- ================= CURVES (曲线) ================= -->
+
+        <!-- 1. Audio Quality (Purple) -->
+        <path d="M50,380 Q150,120 300,120 L800,120" stroke="#6c5ce7" stroke-width="5" fill="none" stroke-linecap="round" />
+        <text x="310" y="110" font-size="13" font-weight="bold" fill="#6c5ce7">Upper Bound Set</text>
+
+
+        <!-- 2. Audio Degradation (Red Dashed) -->
+        <path d="M300,120 Q550,150 800,250" stroke="#d63031" stroke-width="3" stroke-dasharray="8,5" fill="none" />
+        
+        <!-- Label stays inside -->
+        <text x="750" y="275" font-size="13" fill="#d63031" font-weight="bold" text-anchor="middle">Audio Degradation</text>
+
+
+        <!-- 3. AV Sync (Bright Green) -->
+        <path d="M300,380 C450,380 550,140 800,140" stroke="#00b894" stroke-width="4" fill="none" />
+        
+        <!-- Label kept low -->
+        <text x="720" y="180" font-size="13" fill="#00b894" font-weight="bold" text-anchor="middle">AV Sync Improvement</text>
+
+        <!-- Phase 1 Zero Line (Gray) -->
+        <line x1="50" y1="380" x2="300" y2="380" stroke="#e0e0e0" stroke-width="2" />
+
+    </svg>
+</div>
+
+</body>
+</html>

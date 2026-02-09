@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Alive: Animate Your World with Lifelike Audio-Video Generation">
+  <meta property="og:title" content="Alive: Animate Your World with Lifelike Audio-Video Generation" />
+  <meta property="og:description"
+    content="Alive: Animate Your World with Lifelike Audio-Video Generation" />
+  <meta property="og:url" content="https://alive.github.io/" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static2/images/motivation.png" />
+  <meta property="og:image:width" content="2412" />
+  <meta property="og:image:height" content="1394" />
+
+
+  <meta name="twitter:title" content="Alive">
+  <meta name="twitter:description"
+    content="Alive: Animate Your World with Lifelike Audio-Video Generation">
+  <meta name="twitter:image" content="static2/images/motivation.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Character Animation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Alive</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+  
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container" style="max-width: 80% !important; margin: 0 auto;">
+        <!-- <div class="container"> -->
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div style="margin-bottom: 1rem;">
+              <img src="assets/alive_logo.jpg" alt="Alive Logo" style="height: 150px; width: auto;" />
+            </div>
+            <h1 class="title is-1 publication-title" style="font-size: 2.2rem; line-height: 1.4; letter-spacing: 0.02em; font-weight: 500;">
+              <span style="background: linear-gradient(135deg, #4A90D9 0%, #5B7BD5 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 700;">A</span>nimate Your World with <span style="background: linear-gradient(135deg, #5B7BD5 0%, #6B6BD0 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 700;">Li</span>felike Audio-<span style="background: linear-gradient(135deg, #6B6BD0 0%, #7B5BCB 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 700;">V</span>ideo G<span style="background: linear-gradient(135deg, #7B5BCB 0%, #8B4BC6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 700;">e</span>neration
+            </h1>
+
+            <div class="is-size-5 publication-authors" style="margin-top: 1rem; margin-bottom: 1.5rem;">
+              <span class="author-block">ByteDance Alive Team</span>
+            </div>
+
+            <div class="buttons is-centered" style="gap: 1rem;">
+              <a href="https://arxiv.org/abs/2512.21734" target="_blank"
+                class="external-link button is-normal is-rounded"
+                style="background: linear-gradient(135deg, #4A90D9 0%, #5B7BD5 100%); border: none; color: white; padding: 0.75rem 1.5rem; font-weight: 500; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(74, 144, 217, 0.3);"
+                onmouseover="this.style.background='linear-gradient(135deg, #3A80C9 0%, #4B6BC5 100%)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(74, 144, 217, 0.4)';"
+                onmouseout="this.style.background='linear-gradient(135deg, #4A90D9 0%, #5B7BD5 100%)'; this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(74, 144, 217, 0.3)';">
+                <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Tech Report</span>
+              </a>
+              <a href="https://github.com/happylicio/alive.github.io" target="_blank"
+                class="external-link button is-normal is-rounded"
+                style="background: linear-gradient(135deg, #5B7BD5 0%, #6B6BD0 100%); border: none; color: white; padding: 0.75rem 1.5rem; font-weight: 500; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(91, 123, 213, 0.3);"
+                onmouseover="this.style.background='linear-gradient(135deg, #4B6BC5 0%, #5B5BC0 100%)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(91, 123, 213, 0.4)';"
+                onmouseout="this.style.background='linear-gradient(135deg, #5B7BD5 0%, #6B6BD0 100%)'; this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(91, 123, 213, 0.3)';">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+              </a>
+              <a href="#" target="_blank"
+                class="external-link button is-normal is-rounded"
+                style="background: linear-gradient(135deg, #6B6BD0 0%, #7B5BCB 100%); border: none; color: white; padding: 0.75rem 1.5rem; font-weight: 500; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(107, 107, 208, 0.3);"
+                onmouseover="this.style.background='linear-gradient(135deg, #5B5BC0 0%, #6B4BBB 100%)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(107, 107, 208, 0.4)';"
+                onmouseout="this.style.background='linear-gradient(135deg, #6B6BD0 0%, #7B5BCB 100%)'; this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(107, 107, 208, 0.3)';">
+                <span class="icon">
+                  <i class="fas fa-play-circle"></i>
+                </span>
+                <span>Online Demo (Coming Soon)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- motivation -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container" style="max-width: 80% !important; margin: 0 auto;">
+        <!-- Overview Section -->
+        <div style="text-align: center; margin: 0 0 2.5rem 0;">
+          <h2 style="font-size: 2.5rem; font-weight: 700; background: linear-gradient(135deg, #4A90D9 0%, #7B5BCB 50%, #8B4BC6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 0.75rem; letter-spacing: -0.02em;">Overview</h2>
+          <div style="width: 80px; height: 4px; background: linear-gradient(135deg, #4A90D9 0%, #7B5BCB 50%, #8B4BC6 100%); border-radius: 2px; margin: 0 auto;"></div>
+        </div>
+        
+        <div style="background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%); border-radius: 16px; padding: 2rem 2.5rem; box-shadow: 0 4px 20px rgba(74, 144, 217, 0.08); margin-bottom: 2rem; border: 1px solid rgba(74, 144, 217, 0.06);">
+          <p style="font-size: 1.1rem; line-height: 1.75; color: #3a3a3a; margin: 0 0 1.75rem 0; text-align: center;">
+            <span style="background: linear-gradient(135deg, #4A90D9 0%, #5B7BD5 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 700; font-size: 1.2rem;">Alive</span> is a unified audio-video generation model that adapts pretrained Text-to-Video (T2V) models to audio-video generation and animation. Built on the MMDiT architecture, it achieves industry-grade performance for lifelike audio-video generation and animation.
+          </p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem;">
+            <div style="background: #ffffff; border-radius: 10px; padding: 1.25rem; box-shadow: 0 2px 12px rgba(74, 144, 217, 0.06); border-left: 3px solid #4A90D9; transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 6px 20px rgba(74, 144, 217, 0.12)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 12px rgba(74, 144, 217, 0.06)';">
+              <div style="display: flex; align-items: flex-start; gap: 0.625rem;">
+                <span style="font-size: 1.25rem; flex-shrink: 0;">🎬</span>
+                <div>
+                  <h4 style="font-size: 0.95rem; font-weight: 700; color: #4A90D9; margin: 0 0 0.375rem 0;">Unified Audio-Video Generation</h4>
+                  <p style="font-size: 0.875rem; line-height: 1.55; color: #555; margin: 0;">Simultaneously supports Text-to-Video&Audio (T2VA) and Reference-to-Video&Audio (animation) within a single framework.</p>
+                </div>
+              </div>
+            </div>
+            <div style="background: #ffffff; border-radius: 10px; padding: 1.25rem; box-shadow: 0 2px 12px rgba(91, 123, 213, 0.06); border-left: 3px solid #5B7BD5; transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 6px 20px rgba(91, 123, 213, 0.12)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 12px rgba(91, 123, 213, 0.06)';">
+              <div style="display: flex; align-items: flex-start; gap: 0.625rem;">
+                <span style="font-size: 1.25rem; flex-shrink: 0;">⚙️</span>
+                <div>
+                  <h4 style="font-size: 0.95rem; font-weight: 700; color: #5B7BD5; margin: 0 0 0.375rem 0;">Advanced Architecture</h4>
+                  <p style="font-size: 0.875rem; line-height: 1.55; color: #555; margin: 0;">Features TA-CrossAttn for temporally-aligned cross-modal fusion and UniTemp-RoPE for precise audio-visual alignment.</p>
+                </div>
+              </div>
+            </div>
+            <div style="background: #ffffff; border-radius: 10px; padding: 1.25rem; box-shadow: 0 2px 12px rgba(107, 107, 208, 0.06); border-left: 3px solid #6B6BD0; transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 6px 20px rgba(107, 107, 208, 0.12)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 12px rgba(107, 107, 208, 0.06)';">
+              <div style="display: flex; align-items: flex-start; gap: 0.625rem;">
+                <span style="font-size: 1.25rem; flex-shrink: 0;">📊</span>
+                <div>
+                  <h4 style="font-size: 0.95rem; font-weight: 700; color: #6B6BD0; margin: 0 0 0.375rem 0;">High-Quality Data Pipeline</h4>
+                  <p style="font-size: 0.875rem; line-height: 1.55; color: #555; margin: 0;">Comprehensive audio-video captioning and quality control for million-level training data.</p>
+                </div>
+              </div>
+            </div>
+            <div style="background: #ffffff; border-radius: 10px; padding: 1.25rem; box-shadow: 0 2px 12px rgba(123, 91, 203, 0.06); border-left: 3px solid #7B5BCB; transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 6px 20px rgba(123, 91, 203, 0.12)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 12px rgba(123, 91, 203, 0.06)';">
+              <div style="display: flex; align-items: flex-start; gap: 0.625rem;">
+                <span style="font-size: 1.25rem; flex-shrink: 0;">🏆</span>
+                <div>
+                  <h4 style="font-size: 0.95rem; font-weight: 700; color: #7B5BCB; margin: 0 0 0.375rem 0;">SOTA Performance</h4>
+                  <p style="font-size: 0.875rem; line-height: 1.55; color: #555; margin: 0;">Consistently outperforming open-source models and matching or surpassing state-of-the-art commercial solutions.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Demo Video Title -->
+        <div style="text-align: center; margin: 2.5rem 0 1.5rem 0;">
+          <h2 style="font-size: 2.5rem; font-weight: 700; background: linear-gradient(135deg, #4A90D9 0%, #7B5BCB 50%, #8B4BC6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 0.75rem; letter-spacing: -0.02em;">Demo Video</h2>
+          <div style="width: 80px; height: 4px; background: linear-gradient(135deg, #4A90D9 0%, #7B5BCB 50%, #8B4BC6 100%); border-radius: 2px; margin: 0 auto;"></div>
+        </div>
+        
+          <div style="display: flex; justify-content: center; align-items: center;">
+            <!-- <video poster="" id="video3" controls loop height="100%">\
+              <source src="assets/alive_webpage_crf18.mp4" type="video/mp4">
+            </video> -->
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/VtBKDvsGTDQ" title="Alive:  Real-time Infinite Interactive Portrait Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="max-width: 100%;"></iframe>
+          </div>
+        
+        <!-- Benchmark Evaluation Title -->
+        <div style="text-align: center; margin: 3rem 0 2rem 0;">
+          <h2 style="font-size: 2.5rem; font-weight: 700; background: linear-gradient(135deg, #4A90D9 0%, #7B5BCB 50%, #8B4BC6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 0.75rem; letter-spacing: -0.02em;">Benchmark Evaluation</h2>
+          <div style="width: 80px; height: 4px; background: linear-gradient(135deg, #4A90D9 0%, #7B5BCB 50%, #8B4BC6 100%); border-radius: 2px; margin: 0 auto;"></div>
+        </div>
+        
+        <!-- Alive-Bench 1.0 -->
+        <div style="background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%); border-radius: 20px; padding: 2.5rem 3rem; box-shadow: 0 8px 32px rgba(74, 144, 217, 0.12); margin-bottom: 2rem; border: 1px solid rgba(74, 144, 217, 0.08);">
+          <h3 style="font-size: 1.4rem; font-weight: 700; background: linear-gradient(135deg, #4A90D9 0%, #7B5BCB 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1.25rem;">Alive-Bench 1.0</h3>
+          <p style="font-size: 1.05rem; line-height: 1.9; color: #444; text-align: justify; margin: 0 0 1.5rem 0;">
+            We introduce a comprehensive benchmark for joint audio-visual generation that evaluates model performance along three complementary axes—motion quality, visual aesthetic, visual prompt following, audio quality, audio prompt following and audio video synchronization—covering 20+ fine-grained dimensions. This design enables diagnostic evaluation: our benchmark pinpoints which capability fails and why. Crucially, our benchmark is built around usage-like prompts that closely mirror how end users actually describe desired content. As a result, the benchmark reduces the common evaluation–deployment mismatch, where strong offline metrics fail to translate into perceived quality in real applications.
+          </p>
+          
+          <!-- Evaluation Sunburst Chart -->
+          <div style="margin: 2rem 0; padding: 1.5rem; background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%); border-radius: 16px; box-shadow: 0 4px 20px rgba(74, 144, 217, 0.1); border: 1px solid rgba(74, 144, 217, 0.1);">
+            <div id="evaluation-sunburst" style="width: 100%; height: 600px;"></div>
+            <div id="evaluation-description" style="margin-top: 1rem; padding: 1rem 1.5rem; background: linear-gradient(135deg, #f0f4ff 0%, #e8f0ff 100%); border-radius: 12px; border-left: 4px solid #4A90D9; min-height: 60px; display: none;">
+              <div id="evaluation-desc-title" style="font-size: 1rem; font-weight: 600; color: #2c3e50; margin-bottom: 0.5rem;"></div>
+              <div id="evaluation-desc-content" style="font-size: 0.95rem; line-height: 1.6; color: #495057;"></div>
+            </div>
+          </div>
+          
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; width: 100%;">
+            <video poster="" autoplay muted loop playsinline style="width: 100%; border-radius: 8px;">
+              <source src="assets/alive_3x3_grid_video_source/9__seed_random.mp4" type="video/mp4">
+            </video>
+            <video poster="" autoplay muted loop playsinline style="width: 100%; border-radius: 8px;">
+              <source src="assets/alive_3x3_grid_video_source/36__seed_random.mp4" type="video/mp4">
+            </video>
+            <video poster="" autoplay muted loop playsinline style="width: 100%; border-radius: 8px;">
+              <source src="assets/alive_3x3_grid_video_source/65__seed_random.mp4" type="video/mp4">
+            </video>
+            <video poster="" autoplay muted loop playsinline style="width: 100%; border-radius: 8px;">
+              <source src="assets/alive_3x3_grid_video_source/84__seed_random.mp4" type="video/mp4">
+            </video>
+            <video poster="" autoplay muted loop playsinline style="width: 100%; border-radius: 8px;">
+              <source src="assets/alive_3x3_grid_video_source/92__seed_random.mp4" type="video/mp4">
+            </video>
+            <video poster="" autoplay muted loop playsinline style="width: 100%; border-radius: 8px;">
+              <source src="assets/alive_3x3_grid_video_source/105__seed_random.mp4" type="video/mp4">
+            </video>
+            <video poster="" autoplay muted loop playsinline style="width: 100%; border-radius: 8px;">
+              <source src="assets/alive_3x3_grid_video_source/172__seed_random.mp4" type="video/mp4">
+            </video>
+            <video poster="" autoplay muted loop playsinline style="width: 100%; border-radius: 8px;">
+              <source src="assets/alive_3x3_grid_video_source/202__seed_random.mp4" type="video/mp4">
+            </video>
+            <video poster="" autoplay muted loop playsinline style="width: 100%; border-radius: 8px;">
+              <source src="assets/alive_3x3_grid_video_source/261__seed_random.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        
+        <!-- Comparison with SOTA -->
+        <div style="background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%); border-radius: 20px; padding: 2.5rem 3rem; box-shadow: 0 8px 32px rgba(74, 144, 217, 0.12); margin-bottom: 2rem; border: 1px solid rgba(74, 144, 217, 0.08);">
+          <h3 style="font-size: 1.4rem; font-weight: 700; background: linear-gradient(135deg, #5B7BD5 0%, #7B5BCB 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1.25rem;">Comparison with SOTA</h3>
+          <p style="font-size: 1.05rem; line-height: 1.9; color: #444; text-align: justify; margin: 0 0 1.5rem 0;">
+            We conducted extensive two-round human evaluations to benchmark our model's performance against leading competitors (Veo 3.1, Kling 2.6, Wan 2.6, Sora 2, and LTX-2). Across all metrics, <span style="background: linear-gradient(135deg, #4A90D9 0%, #5B7BD5 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 700;">Alive</span> ranks at or near the top, indicating a well-balanced capability profile rather than a single-metric advantage. <span style="background: linear-gradient(135deg, #4A90D9 0%, #5B7BD5 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 700;">Alive</span> is the best on audio prompt following and audio video synchronization, outperforming other competitors by a notable margin. This indicates a strong advantage in cross-modal understanding and alignment, particularly in faithfully reflecting audio instructions and maintaining tight timing correspondence between audio events and visual content.
+          </p>
+          <div style="display: flex; justify-content: center; align-items: center;">
+            <img src="assets/alive_benchmark.png" alt="Alive Benchmark Results" style="width: 100%; border-radius: 8px;">
+          </div>
+        </div>
+        
+        <!-- Introduction of Alive Section -->
+        <div style="text-align: center; margin: 3rem 0 2rem 0;">
+          <h2 style="font-size: 2.5rem; font-weight: 700; background: linear-gradient(135deg, #4A90D9 0%, #7B5BCB 50%, #8B4BC6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 0.75rem; letter-spacing: -0.02em;">Introduction of Alive</h2>
+          <div style="width: 80px; height: 4px; background: linear-gradient(135deg, #4A90D9 0%, #7B5BCB 50%, #8B4BC6 100%); border-radius: 2px; margin: 0 auto;"></div>
+        </div>
+        
+        <p style="font-size: 1.15rem; line-height: 1.9; color: #3a3a3a; margin: 0 0 2rem 0;">
+          <span style="background: linear-gradient(135deg, #4A90D9 0%, #5B7BD5 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 700; font-size: 1.25rem;">Alive</span> is an unified audio-video generation model that excels in text-to-video&audio (T2VA), image-to-video&audio (I2VA), text-to-video (T2V), and text-to-video (T2A) generation. It offers flexible resolution and aspect ratio, arbitrary video length, and extensible for character-reference audio-video animation.
+        </p>
+        
+        <!-- Framework Image Title -->
+        <div style="background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%); border-radius: 20px; padding: 2.5rem 3rem; box-shadow: 0 8px 32px rgba(74, 144, 217, 0.12); margin-bottom: 2rem; border: 1px solid rgba(74, 144, 217, 0.08);">
+          <h3 style="font-size: 1.4rem; font-weight: 700; background: linear-gradient(135deg, #6B6BD0 0%, #7B5BCB 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1.25rem;">Joint Audio-Video Modeling</h3>
+          <p style="font-size: 1.05rem; line-height: 1.9; color: #444; text-align: justify; margin: 0 0 1.5rem 0;">
+            We propose <span style="background: linear-gradient(135deg, #4A90D9 0%, #5B7BD5 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 700;">Alive</span>, a joint generation architecture that seamlessly integrates Audio and Video DiTs via an extended "Dual Stream + Single Stream" paradigm. To resolve temporal granularity mismatches, we introduce <span style="background-color: #E8F5E0; color: #2c3e50; padding: 2px 6px; border-radius: 4px; font-weight: 600;">UniTemp-RoPE</span> and <span style="background-color: #F5E0E8; color: #2c3e50; padding: 2px 6px; border-radius: 4px; font-weight: 600;">TA-CrossAttn</span>, which map heterogeneous latents into a shared continuous temporal coordinate system, enforcing physical-time alignment for synchronized audio-visual generation.
+          </p>
+          <div style="display: flex; justify-content: center; align-items: center;">
+            <img src="assets/framework.jpg" alt="Joint Audio-Video Modeling Framework" style="width: 100%; max-width: 900px; border-radius: 8px;" />
+          </div>
+          <!-- Model Parameters Table -->
+          <div style="margin-top: 2rem; display: flex; justify-content: center;">
+            <table style="border-collapse: collapse; font-size: 0.9rem; text-align: center;">
+              <thead>
+                <tr>
+                  <th style="padding: 10px 14px; border-top: 2px solid #333; border-bottom: 1px solid #333; font-weight: 600;">Model</th>
+                  <th style="padding: 10px 14px; border-top: 2px solid #333; border-bottom: 1px solid #333; font-weight: 600;">Model Size</th>
+                  <th style="padding: 10px 14px; border-top: 2px solid #333; border-bottom: 1px solid #333; font-weight: 600;">M</th>
+                  <th style="padding: 10px 14px; border-top: 2px solid #333; border-bottom: 1px solid #333; font-weight: 600;">N</th>
+                  <th style="padding: 10px 14px; border-top: 2px solid #333; border-bottom: 1px solid #333; font-weight: 600;">Input Dim.</th>
+                  <th style="padding: 10px 14px; border-top: 2px solid #333; border-bottom: 1px solid #333; font-weight: 600;">Output Dim.</th>
+                  <th style="padding: 10px 14px; border-top: 2px solid #333; border-bottom: 1px solid #333; font-weight: 600;">Num. of Heads</th>
+                  <th style="padding: 10px 14px; border-top: 2px solid #333; border-bottom: 1px solid #333; font-weight: 600;">Head Dim</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="padding: 10px 14px; border-bottom: 1px solid #ccc; font-weight: 600;">VideoDiT</td>
+                  <td style="padding: 10px 14px; border-bottom: 1px solid #ccc; font-weight: 600;">12B</td>
+                  <td style="padding: 10px 14px; border-bottom: 1px solid #ccc; font-weight: 600;">16</td>
+                  <td style="padding: 10px 14px; border-bottom: 1px solid #ccc; font-weight: 600;">40</td>
+                  <td style="padding: 10px 14px; border-bottom: 1px solid #ccc; font-weight: 600;">36</td>
+                  <td style="padding: 10px 14px; border-bottom: 1px solid #ccc; font-weight: 600;">16</td>
+                  <td style="padding: 10px 14px; border-bottom: 1px solid #ccc; font-weight: 600;">24</td>
+                  <td style="padding: 10px 14px; border-bottom: 1px solid #ccc; font-weight: 600;">128</td>
+                </tr>
+                <tr>
+                  <td style="padding: 10px 14px; border-bottom: 2px solid #333; font-weight: 600;">AudioDiT</td>
+                  <td style="padding: 10px 14px; border-bottom: 2px solid #333; font-weight: 600;">2B</td>
+                  <td style="padding: 10px 14px; border-bottom: 2px solid #333; font-weight: 600;">32</td>
+                  <td style="padding: 10px 14px; border-bottom: 2px solid #333; font-weight: 600;">–</td>
+                  <td style="padding: 10px 14px; border-bottom: 2px solid #333; font-weight: 600;">32</td>
+                  <td style="padding: 10px 14px; border-bottom: 2px solid #333; font-weight: 600;">32</td>
+                  <td style="padding: 10px 14px; border-bottom: 2px solid #333; font-weight: 600;">24</td>
+                  <td style="padding: 10px 14px; border-bottom: 2px solid #333; font-weight: 600;">64</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Audio-Video Refiner -->
+        <div style="background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%); border-radius: 20px; padding: 2.5rem 3rem; box-shadow: 0 8px 32px rgba(74, 144, 217, 0.12); margin-bottom: 2rem; border: 1px solid rgba(74, 144, 217, 0.08);">
+          <h3 style="font-size: 1.4rem; font-weight: 700; background: linear-gradient(135deg, #7B5BCB 0%, #8B4BC6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1.25rem;">Audio-Video Refiner</h3>
+          <p style="font-size: 1.05rem; line-height: 1.9; color: #444; text-align: justify; margin: 0 0 1.5rem 0;">
+            The proposed cascaded audio-video (AV) refiner leverages a 480p base model to efficiently enable 1080p audio-video generation without excessive computational cost. On the video side, low-resolution inputs are refined to high-resolution outputs, effectively mitigating generative artifacts. For audio, the approach preserves both fidelity and audio-visual synchronization by inputting clean audio latents into a frozen Audio DiT module, thereby maintaining the quality and audio-video sync established by the base model.
+          </p>
+          <div style="display: flex; justify-content: center; align-items: center;">
+            <img src="assets/alive_refiner.png" alt="Audio-Video Refiner" style="width: 100%; max-width: 900px; border-radius: 8px;" />
+          </div>
+        </div>
+
+        <!-- Comprehensive Audio-Video Data Pipelines -->
+        <div style="background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%); border-radius: 20px; padding: 2.5rem 3rem; box-shadow: 0 8px 32px rgba(74, 144, 217, 0.12); margin-bottom: 2rem; border: 1px solid rgba(74, 144, 217, 0.08);">
+          <h3 style="font-size: 1.4rem; font-weight: 700; background: linear-gradient(135deg, #8B4BC6 0%, #9B3BC1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1.25rem;">Comprehensive Audio-Video Data Pipelines</h3>
+          <p style="font-size: 1.05rem; line-height: 1.9; color: #444; text-align: justify; margin: 0 0 1.5rem 0;">
+            Going beyond conventional visual quality filtering, our work introduces a comprehensive data pipeline for joint audio-visual generation. It performs dual-quality filtering on both audio and video modalities, and employs a joint <span style="background: linear-gradient(135deg, #4A90D9 0%, #5B7BD5 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 700;">visual + audio</span> keyword labeling system to associate a single visual object with its diverse range of audio events, enabling a more sophisticated level of audio-visual data balancing. Furthermore, we optimize and correct the <span style="font-weight: 700;">Subject-Speech correspondence</span> in multi-person and multi-shot scenarios, significantly enhancing character identity consistency and accuracy.
+          </p>
+          <div style="display: flex; justify-content: center; align-items: center;">
+            <img src="assets/correct_pipeline.jpg" alt="Comprehensive Audio-Video Data Pipelines" style="width: 100%; border-radius: 8px;" />
+          </div>
+        </div>
+
+        <!-- Role-Playing Animate -->
+        <div style="background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%); border-radius: 20px; padding: 2.5rem 3rem; box-shadow: 0 8px 32px rgba(74, 144, 217, 0.12); margin-bottom: 2rem; border: 1px solid rgba(74, 144, 217, 0.08);">
+          <h3 style="font-size: 1.4rem; font-weight: 700; background: linear-gradient(135deg, #8B4BC6 0%, #9B3BC1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1.25rem;">Role-Playing Animate</h3>
+          <p style="font-size: 1.05rem; line-height: 1.9; color: #444; text-align: justify; margin: 0 0 1.5rem 0;">
+            We introduce a cross-pair pipeline and a unified-editing-based reference augmentation pipeline to robustly decouple identity from static appearance, effectively mitigating copy-paste bias. Furthermore, we develop a multi-reference conditioning mechanism with a dedicated temporal offset and a dual-conditioning CFG strategy, enabling the model to treat reference images as persistent identity anchors rather than temporal frames, thus achieving superior identity consistency and motion dynamics.
+          </p>
+          <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; width: 100%;">
+            <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px;">
+              <source src="assets/role_play/2__seed_random.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px;">
+              <source src="assets/role_play/3aacef55_sr.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px;">
+              <source src="assets/role_play/690dd723_sr.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px;">
+              <source src="assets/role_play/454015df_sr.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <!-- Training Recipe -->
+        <div style="background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%); border-radius: 20px; padding: 2.5rem 3rem; box-shadow: 0 8px 32px rgba(74, 144, 217, 0.12); margin-bottom: 2rem; border: 1px solid rgba(74, 144, 217, 0.08);">
+          <h3 style="font-size: 1.4rem; font-weight: 700; background: linear-gradient(135deg, #8B4BC6 0%, #9B3BC1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1.25rem;">Training Recipe</h3>
+          <p style="font-size: 1.05rem; line-height: 1.9; color: #444; text-align: left; margin: 0 0 1.5rem 0;">
+            <span style="background: linear-gradient(135deg, #4A90D9 0%, #5B7BD5 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 700;">The Importance of Audio Training:</span> The initial AudioDiT pre-training quality (e.g., tone authenticity, pronunciation accuracy, emotional consistency) sets the upper bound for audio performance in joint generation. Joint training primarily facilitates audio-visual synchronization, with limited impact on the fundamental audio quality. Therefore, inadequate audio pre-training cannot be meaningfully improved during subsequent joint training.  <span style="background: linear-gradient(135deg, #4A90D9 0%, #5B7BD5 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 700;">Audio Sensitivity and Forgetting:</span> The audio branch is highly sensitive to changes in training data distribution and quickly adapts, often leading to catastrophic forgetting of previously learned robust audio features. To address this, asymmetric learning rates are used to prevent audio quality degradation during joint training.
+          </p>
+          <div style="display: flex; justify-content: center; align-items: center;">
+            <img src="assets/alive_audiotraining.png" alt="Training Recipe" style="width: 70%; border-radius: 8px;" />
+          </div>
+        </div>
+
+        <!-- Inference Optimization -->
+        <div style="background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%); border-radius: 20px; padding: 2.5rem 3rem; box-shadow: 0 8px 32px rgba(74, 144, 217, 0.12); margin-bottom: 2rem; border: 1px solid rgba(74, 144, 217, 0.08);">
+          <h3 style="font-size: 1.4rem; font-weight: 700; background: linear-gradient(135deg, #8B4BC6 0%, #9B3BC1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1.25rem;">Inference Optimization</h3>
+          <p style="font-size: 1.05rem; line-height: 1.9; color: #444; text-align: left; margin: 0 0 1.5rem 0;">
+            The Audio DiT and Video DiT are each guided by two distinct conditions: the text prompt and cross-attention signal. The introduction of cross-attention provides a mutual signal that steers the model toward audio-video synchronization. To effectively utilize this secondary cross-attention condition, we adopt a multi-condition control scheme, treating the text prompt (positive <span style="font-weight: 700;"><i>c</i><sub>pos</sub></span> / negative <span style="font-weight: 700;"><i>c</i><sub>neg</sub></span>) and the mutual cross-attention signal (<span style="font-weight: 700;"><i>c</i><sub>mutual</sub></span>) as separate, controllable conditions for guidance.
+          </p>
+          <div style="display: flex; justify-content: center; align-items: center;">
+            <img src="assets/alive_sharecfg.jpg" alt="Inference Optimization" style="width: 100%; border-radius: 8px;">8px;" />
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <!-- End image carousel -->
+
+
+  <!-- Video carousel -->
+  <!-- <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3">Results</h2>
+
+        <h2 class="content has-text-justified">
+          Our audio-driven model achieves high-quality generation results under conditions involving diverse reference styles and multiple languages.
+        </h2>
+
+        <h2 class="title is-4">Realistic Style</h2>
+
+        <div id="results-carousel33" class="carousel results-carousel">
+          <div class="item item-video3">
+            <video poster="" id="video5" controls loop height="100%">\
+              <source src="assets/realistic/output (44).mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video3">
+            <video poster="" id="video1" controls loop height="100%">\
+              <source src="assets/realistic/output (22).mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video3">
+            <video poster="" id="video1" controls loop height="100%">\
+              <source src="assets/realistic/goods_4.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video3">
+            <video poster="" id="video2" controls loop height="100%">\
+              <source src="assets/realistic/output (26).mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video3">
+            <video poster="" id="video3" controls loop height="100%">\
+              <source src="assets/realistic/output (28).mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video3">
+            <video poster="" id="video4" controls loop height="100%">\
+              <source src="assets/realistic/daihuo-shoubiao-1491.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+
+        <h2 class="title is-4">Cartoon Style</h2>
+
+        <div id="results-carousel33" class="carousel results-carousel">
+          <div class="item item-video3">
+            <video poster="" id="video3" controls loop height="100%">\
+              <source src="assets/cartoon/output (42).mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video3">
+            <video poster="" id="video3" controls loop height="100%">\
+              <source src="assets/cartoon/output (43).mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video3">
+            <video poster="" id="video3" controls loop height="100%">\
+              <source src="assets/cartoon/output (39).mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video3">
+            <video poster="" id="video3" controls loop height="100%">\
+              <source src="assets/cartoon/output (29).mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video3">
+            <video poster="" id="video3" controls loop height="100%">\
+              <source src="assets/cartoon/output (32).mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video3">
+            <video poster="" id="video3" controls loop height="100%">\
+              <source src="assets/cartoon/media (1).mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <h2 class="title is-4">Ablation Study</h2>
+        <div class="center-video">
+          <video poster="" id="video110" controls loop height="100%">\
+            <source src="assets/ablation/ablation_crf18.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <h2 class="title is-4">Comparison</h2>
+        <div class="center-video">
+          <video poster="" id="video110" controls loop height="100%">\
+            <source src="assets/compare/longlive_crf18.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="center-video">
+          <video poster="" id="video110" controls loop height="100%">\
+            <source src="assets/compare/rollingforcing_crf18.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="center-video">
+          <video post="video110" controls loop height="100%">\
+            <source src="assets/compare/compare_liveavatar.mp4" type="video/mp4">
+          </video>
+        </div>
+
+      </div>
+    </div>
+  </section> -->
+  <!-- End video carousel -->
+
+  <!-- More Examples -->
+  <section class="section" id="MoreExamples">
+    <div class="container" style="max-width: 80% !important; margin: 0 auto;">
+      <!-- More Examples Title -->
+      <div style="text-align: center; margin: 0 0 2rem 0;">
+        <h2 style="font-size: 2.5rem; font-weight: 700; background: linear-gradient(135deg, #4A90D9 0%, #7B5BCB 50%, #8B4BC6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 0.75rem; letter-spacing: -0.02em;">More Examples</h2>
+        <div style="width: 80px; height: 4px; background: linear-gradient(135deg, #4A90D9 0%, #7B5BCB 50%, #8B4BC6 100%); border-radius: 2px; margin: 0 auto;"></div>
+      </div>
+
+      <!-- Block 1: Audio Video Synchronization -->
+      <div style="background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%); border-radius: 20px; padding: 2rem; box-shadow: 0 8px 32px rgba(74, 144, 217, 0.12); margin-bottom: 2rem; border: 1px solid rgba(74, 144, 217, 0.08);">
+        <h3 style="font-size: 1.5rem; font-weight: 700; color: #4A90D9; margin-bottom: 0.75rem;">Audio Video Synchronization</h3>
+        <p style="font-size: 1rem; line-height: 1.8; color: #555; margin-bottom: 1.5rem;">
+          Generates diverse human voices and sound effects with natural lip-sync alignment. The audio quality is clear with stable spatial presence, perfectly synchronized with visual rhythm and emotional changes for coherent storytelling.
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; align-items: start;">
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px; display: block;">
+              <source src="assets/audio_video_sync/2__seed_random.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px; display: block;">
+              <source src="assets/audio_video_sync/28__seed_random.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px; display: block;">
+              <source src="assets/audio_video_sync/36__seed_random.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px; display: block;">
+              <source src="assets/audio_video_sync/39__seed_84.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px; display: block;">
+              <source src="assets/audio_video_sync/31__seed_random.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px; display: block;">
+              <source src="assets/audio_video_sync/38__seed_83.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <!-- Block 2: Motion Quality -->
+      <div style="background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%); border-radius: 20px; padding: 2rem; box-shadow: 0 8px 32px rgba(91, 123, 213, 0.12); margin-bottom: 2rem; border: 1px solid rgba(91, 123, 213, 0.08);">
+        <h3 style="font-size: 1.5rem; font-weight: 700; color: #5B7BD5; margin-bottom: 0.75rem;">Motion Quality</h3>
+        <p style="font-size: 1rem; line-height: 1.8; color: #555; margin-bottom: 1.5rem;">
+          Excels in high-motion scenarios with dynamic camera movements including pans, tilts, and tracking shots. Maintains smooth temporal coherence and physical plausibility even during rapid motion, with synchronized audio that matches the visual dynamics.
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; align-items: start;">
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px; display: block;">
+              <source src="assets/motion_quality/pingpong.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px; display: block;">
+              <source src="assets/motion_quality/47__seed_random.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px; display: block;">
+              <source src="assets/motion_quality/50__seed_random.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px; display: block;">
+              <source src="assets/motion_quality/play_tennis.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px; display: block;">
+              <source src="assets/motion_quality/21__seed_random.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px; display: block;">
+              <source src="assets/motion_quality/19__seed_random.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <!-- Block 3: Photorealistic Quality -->
+      <div style="background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%); border-radius: 20px; padding: 2rem; box-shadow: 0 8px 32px rgba(107, 107, 208, 0.12); margin-bottom: 2rem; border: 1px solid rgba(107, 107, 208, 0.08);">
+        <h3 style="font-size: 1.5rem; font-weight: 700; color: #6B6BD0; margin-bottom: 0.75rem;">Photorealistic Quality</h3>
+        <p style="font-size: 1rem; line-height: 1.8; color: #555; margin-bottom: 1.5rem;">
+          Delivers cinematic-level realism with natural skin textures, nuanced facial expressions, and lifelike movements. Every frame captures authentic human presence with convincing lighting and physical accuracy, making virtual content indistinguishable from reality.
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; align-items: start;">
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px; display: block;">
+              <source src="assets/photorealistic_quality/0__seed_random.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px; display: block;">
+              <source src="assets/photorealistic_quality/17__seed_62.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px; display: block;">
+              <source src="assets/photorealistic_quality/3__seed_random.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px; display: block;">
+              <source src="assets/photorealistic_quality/44__seed_89.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px; display: block;">
+              <source src="assets/photorealistic_quality/3__seed_48.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px; display: block;">
+              <source src="assets/photorealistic_quality/26__seed_random.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <!-- Block 4: Unlimited Creativity -->
+      <div style="background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%); border-radius: 20px; padding: 2rem; box-shadow: 0 8px 32px rgba(123, 91, 203, 0.12); margin-bottom: 2rem; border: 1px solid rgba(123, 91, 203, 0.08);">
+        <h3 style="font-size: 1.5rem; font-weight: 700; color: #7B5BCB; margin-bottom: 0.75rem;">Unlimited Creativity</h3>
+        <p style="font-size: 1rem; line-height: 1.8; color: #555; margin-bottom: 1.5rem;">
+          Explore curated examples to inspire your next creation. From realistic scenes to animated styles, from solo performances to complex multi-character interactions, discover the endless possibilities of AI-powered audio-video generation.
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; align-items: start;">
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px; display: block;">
+              <source src="assets/unlimited_creativity/0__seed_45.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px; display: block;">
+              <source src="assets/unlimited_creativity/6__seed_51.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px; display: block;">
+              <source src="assets/unlimited_creativity/17__seed_random.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px; display: block;">
+              <source src="assets/unlimited_creativity/1__seed_46.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px; display: block;">
+              <source src="assets/unlimited_creativity/7__seed_random.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px; display: block;">
+              <source src="assets/unlimited_creativity/16__seed_61.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px; display: block;">
+              <source src="assets/unlimited_creativity/5__seed_50.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px; display: block;">
+              <source src="assets/unlimited_creativity/11__seed_56.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px; display: block;">
+              <source src="assets/unlimited_creativity/24__seed_random.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Citation -->
+  <section class="section" id="Citation">
+    <div class="container" style="max-width: 80% !important; margin: 0 auto;">
+      <!-- Citation Title -->
+      <div style="text-align: center; margin: 0 0 1.5rem 0;">
+        <h2 style="font-size: 2.5rem; font-weight: 700; background: linear-gradient(135deg, #4A90D9 0%, #7B5BCB 50%, #8B4BC6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 0.75rem; letter-spacing: -0.02em;">Citation</h2>
+        <div style="width: 80px; height: 4px; background: linear-gradient(135deg, #4A90D9 0%, #7B5BCB 50%, #8B4BC6 100%); border-radius: 2px; margin: 0 auto;"></div>
+      </div>
+      
+      <p style="color: #666; margin-bottom: 1rem;">If you find our work useful for your research, please consider citing:</p>
+      <div class="citation-box" style="background: #f5f5f5; border-radius: 12px; padding: 20px; position: relative; border: 1px solid #e0e0e0;">
+        <button onclick="copyCitation()" class="button is-small" style="position: absolute; top: 15px; right: 15px; background: #fff; color: #333; border: 1px solid #ddd;">Copy</button>
+        <pre style="background: transparent; color: #333; margin: 0; padding: 0;"><code>@article{alive,
+  title={Alive: Animate Your World with Lifelike Audio-Video Generation},
+  author={ByteDance Alive Team},
+  journal={arXiv preprint},
+  year={2026}
+}</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ethics Concerns -->
+  <section class="section" id="Ethics" style="padding: 1.5rem 0;">
+    <div class="container" style="max-width: 80% !important; margin: 0 auto;">
+      <div style="background: #f8f8f8; border-radius: 8px; padding: 1rem 1.5rem; border-left: 3px solid #7B5BCB;">
+        <p style="color: #777; font-size: 0.85rem; line-height: 1.6; margin: 0;">
+          <strong style="color: #555;">Ethics Concerns:</strong> All human images used in our demonstrations are either copyrighted or AI-generated, and are intended solely to showcase the capabilities of this research. Please contact us if there are any concerns, and we will delete it in time.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer" style="background: #fafafa; padding: 40px 0;">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content has-text-centered">
+            <p style="color: #666;">
+              Copyright © 2026 Bytedance Alive Team. All rights reserved.
+            </p>
+            <p style="color: #999; font-size: 0.9rem; margin-top: 10px;">
+              The website template is adapted from <a href="https://nerfies.github.io" target="_blank" style="color: #666;">Nerfies</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ClustrMaps Visitor Tracker (Hidden) -->
+  <!-- <div style="display: none;">
+    <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=YOUR_CLUSTRMAPS_KEY&cl=ffffff&w=a"></script>
+  </div> -->
+
+  <script>
+    bulmaCarousel.attach('#results-carousel11', {
+      slidesToScroll: 1,
+      slidesToShow: 1,
+      infinite: true,
+      autoplay: false,
+    });
+    bulmaCarousel.attach('#results-carousel22', {
+      slidesToScroll: 1,
+      slidesToShow: 2,
+      infinite: true,
+      autoplay: false,
+    });
+    bulmaCarousel.attach('#results-carousel33', {
+      slidesToScroll: 3,
+      slidesToShow: 3,
+      infinite: true,
+      autoplay: false,
+    });
+    bulmaCarousel.attach('#results-carousel44', {
+      slidesToScroll: 4,
+      slidesToShow: 4,
+      infinite: true,
+      autoplay: false,
+    });
+  </script>
+
+  <!-- Default Statcounter code for aa2.0
+https://humanaigc.github.io/animate-anyone-2/ -->
+  <script type="text/javascript">
+    var sc_project = 13086045;
+    var sc_invisible = 1;
+    var sc_security = "edb02115"; 
+  </script>
+  <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript>
+    <div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img
+          class="statcounter" src="https://c.statcounter.com/13086045/0/edb02115/1/" alt="Web Analytics"
+          referrerPolicy="no-referrer-when-downgrade"></a></div>
+  </noscript>
+
+  <script>
+    function copyCitation() {
+      const citation = `@article{alive,
+  title={Alive: Animate Your World with Lifelike Audio-Video Generation},
+  author={ByteDance Alive Team},
+  journal={arXiv preprint},
+  year={2026}
+}`;
+      navigator.clipboard.writeText(citation).then(() => {
+        const btn = document.querySelector('.citation-box button');
+        const originalText = btn.textContent;
+        btn.textContent = 'Copied!';
+        setTimeout(() => {
+          btn.textContent = originalText;
+        }, 2000);
+      });
+    }
+  </script>
+
+  <style>
+    .video-container {
+      position: relative;
+      display: inline-block;
+    }
+    .mute-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 40px;
+      height: 40px;
+      background: rgba(0, 0, 0, 0.6);
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.3s ease;
+      z-index: 10;
+    }
+    .mute-btn:hover {
+      background: rgba(0, 0, 0, 0.8);
+    }
+    .mute-btn svg {
+      width: 20px;
+      height: 20px;
+      fill: white;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const videos = document.querySelectorAll('video[autoplay][muted]');
+      const allVideoElements = [];
+      
+      videos.forEach(function(video) {
+        const parent = video.parentElement;
+        
+        const container = document.createElement('div');
+        container.className = 'video-container';
+        container.style.width = video.style.width || '100%';
+        
+        parent.insertBefore(container, video);
+        container.appendChild(video);
+        
+        const muteBtn = document.createElement('button');
+        muteBtn.className = 'mute-btn';
+        muteBtn.innerHTML = `
+          <svg class="mute-icon" viewBox="0 0 24 24">
+            <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73 4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
+          </svg>
+          <svg class="unmute-icon" viewBox="0 0 24 24" style="display: none;">
+            <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+          </svg>
+        `;
+        
+        container.appendChild(muteBtn);
+        
+        const muteIcon = muteBtn.querySelector('.mute-icon');
+        const unmuteIcon = muteBtn.querySelector('.unmute-icon');
+        
+        function updateMuteIcon() {
+          if (video.muted) {
+            muteIcon.style.display = 'block';
+            unmuteIcon.style.display = 'none';
+          } else {
+            muteIcon.style.display = 'none';
+            unmuteIcon.style.display = 'block';
+          }
+        }
+        
+        // Store reference for global mute control
+        const videoObj = {
+          video: video,
+          updateIcon: updateMuteIcon
+        };
+        allVideoElements.push(videoObj);
+        
+        muteBtn.addEventListener('click', function() {
+          if (video.muted) {
+            // Unmuting this video - mute all others
+            allVideoElements.forEach(function(v) {
+              if (v.video !== video) {
+                v.video.muted = true;
+                v.updateIcon();
+              }
+            });
+            video.muted = false;
+          } else {
+            // Muting this video
+            video.muted = true;
+          }
+          updateMuteIcon();
+        });
+      });
+    });
+  </script>
+
+  <!-- ECharts and Evaluation Sunburst Chart -->
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+  <script>
+    // Visual Assessment Data
+    const visualData = {
+      name: "Visual\nAssessment",
+      itemStyle: { color: '#5dade2' },
+      label: { fontSize: 14, fontWeight: 'bold' },
+      children: [
+        {
+          name: "Motion\nQuality",
+          itemStyle: { color: '#85c1e9' },
+          children: [
+            { name: "Action", value: 1, itemStyle: { color: '#aed6f1' } },
+            { name: "Interaction", value: 1, itemStyle: { color: '#d6eaf8' } },
+            { name: "Distortion", value: 1, itemStyle: { color: '#ebf5fb' } }
+          ]
+        },
+        {
+          name: "Visual\nAesthetic",
+          itemStyle: { color: '#7fb3d5' },
+          children: [
+            { name: "Image Quality", value: 1, itemStyle: { color: '#a9cce3' } },
+            { name: "Color", value: 1, itemStyle: { color: '#aed6f1' } },
+            { name: "Clarity", value: 1, itemStyle: { color: '#d4e6f1' } },
+            { name: "Realism", value: 1, itemStyle: { color: '#eaf2f8' } },
+            { name: "Aesthetics", value: 1, itemStyle: { color: '#f5f9fd' } }
+          ]
+        },
+        {
+          name: "Visual Prompt\nFollowing",
+          itemStyle: { color: '#5499c7' },
+          children: [
+            { name: "Action Accuracy", value: 1, itemStyle: { color: '#7fb3d5' } },
+            { name: "Action Magnitude", value: 1, itemStyle: { color: '#85c1e9' } },
+            { name: "Camera Movement", value: 1, itemStyle: { color: '#aed6f1' } },
+            { name: "Static Instruction", value: 1, itemStyle: { color: '#d6eaf8' } }
+          ]
+        }
+      ]
+    };
+
+    // Audio Assessment Data
+    const audioData = {
+      name: "Audio\nAssessment",
+      itemStyle: { color: '#f1948a' },
+      label: { fontSize: 14, fontWeight: 'bold' },
+      children: [
+        {
+          name: "Audio\nQuality",
+          itemStyle: { color: '#f5b7b1' },
+          children: [
+            { name: "Pronunciation\nFluency", value: 1, itemStyle: { color: '#fadbd8' } },
+            { name: "Noise Floor\nSuppression", value: 1, itemStyle: { color: '#fdedec' } },
+            { name: "Timbre\nAuthenticity", value: 1, itemStyle: { color: '#fff5f5' } }
+          ]
+        },
+        {
+          name: "Audio Prompt\nFollowing",
+          itemStyle: { color: '#f1948a' },
+          children: [
+            { name: "Pronunciation\nAccuracy", value: 1, itemStyle: { color: '#f5b7b1' } },
+            { name: "Emotion\nConsistency", value: 1, itemStyle: { color: '#fadbd8' } },
+            { name: "Loudness", value: 1, itemStyle: { color: '#fdedec' } },
+            { name: "Env. Sound\nMatching", value: 1, itemStyle: { color: '#fff5f5' } }
+          ]
+        },
+        {
+          name: "Audio Video\nSynchronization",
+          itemStyle: { color: '#e6b0aa' },
+          children: [
+            { name: "Lip-Sync", value: 1, itemStyle: { color: '#f5b7b1' } },
+            { name: "Sound-Source\nIdentity", value: 1, itemStyle: { color: '#fadbd8' } },
+            { name: "Event-Sync", value: 1, itemStyle: { color: '#fdedec' } }
+          ]
+        }
+      ]
+    };
+
+    // Descriptions data
+    const descriptions = {
+      'Motion\nQuality': 'This category assesses the physical realism and coherence of movement.',
+      'Action': 'Evaluates if the motion is natural and smooth, conforming to the inherent laws of movement.',
+      'Interaction': 'Checks if interactions (between subjects, subject-object, or between objects) adhere to physical laws.',
+      'Distortion': 'Determines if the subject exhibits artifacts like noise, frame loss, or blurring, and ensures the subject remains consistent throughout.',
+      'Visual\nAesthetic': 'This category evaluates the aesthetic and technical quality of the image itself.',
+      'Image Quality': 'Covering texture, lighting, and the presence of visual artifacts such as flickering or overexposure.',
+      'Color': 'For the appropriateness and appeal of the color scheme.',
+      'Clarity': 'Measuring image sharpness.',
+      'Realism': 'Determining if the visual output is sufficiently realistic (or stylistically consistent for non-realistic styles).',
+      'Aesthetics': 'For the overall visual appeal.',
+      'Visual Prompt\nFollowing': 'This category measures how faithfully the generated video adheres to the user\'s text prompt.',
+      'Action Accuracy': 'Checking the correctness of actions, temporal sequence, and direction.',
+      'Action Magnitude': 'Assessing the amplitude and speed of actions.',
+      'Camera Movement': 'Evaluating camera operations like panning, zooming, and tilting.',
+      'Static Instruction': 'Judging subjects\' appearances, numbers, spatial relationships, etc., and background are correct.',
+      'Audio\nQuality': 'This category assesses the clarity and naturalness of synthesized audio.',
+      'Pronunciation\nFluency': 'Evaluates the naturalness of speech in terms of rhythm and coherence, focusing on whether speaking rate, pauses, and speech flow conform to natural pronunciation rhythm.',
+      'Noise Floor\nSuppression': 'Assesses the degree of control over residual noise levels (e.g., electrical hum).',
+      'Timbre\nAuthenticity': 'Evaluates whether the timbre is natural and full-bodied, and whether it matches the subject specification and the intended scenario.',
+      'Audio Prompt\nFollowing': 'This category evaluates how accurately the generated audio complies with the specified vocal and acoustic constraints.',
+      'Pronunciation\nAccuracy': 'Degree to which syllables and words are produced with correct phonemes, clear articulation, and high intelligibility, without phoneme substitutions, muffled/unclear sounds, slurring, or omissions.',
+      'Emotion\nConsistency': 'Degree to which expressed emotional type and intensity match the semantic and contextual cues.',
+      'Loudness': 'Degree to which the loudness conforms to the prompt and the target context.',
+      'Env. Sound\nMatching': 'Assess the alignment between the background ambience and the scene specified in the instruction.',
+      'Audio Video\nSynchronization': 'This category measures the coherence between audio and video.',
+      'Lip-Sync': 'Degree of temporal consistency between speech and lip/facial movements.',
+      'Sound-Source\nIdentity': 'Evaluates whether the identity of the sound source is consistent with the prompt.',
+      'Event-Sync': 'Measures non-speech sound events (e.g., animal vocalizations, instrument sounds, vehicle noises) are temporally aligned with the video.'
+    };
+
+    // Initialize chart when DOM is ready
+    document.addEventListener('DOMContentLoaded', function() {
+      const chartDom = document.getElementById('evaluation-sunburst');
+      if (!chartDom) return;
+      
+      const myChart = echarts.init(chartDom);
+      
+      const option = {
+        tooltip: {
+          trigger: 'item',
+          formatter: function(params) {
+            return '<div style="font-weight:bold">' + params.name.replace(/\n/g, ' ') + '</div>';
+          },
+          backgroundColor: 'rgba(255, 255, 255, 0.95)',
+          borderColor: '#ddd',
+          borderWidth: 1,
+          textStyle: { color: '#333' },
+          extraCssText: 'box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px;'
+        },
+        series: [
+          {
+            type: 'sunburst',
+            data: [visualData],
+            radius: [0, '70%'],
+            center: ['25%', '45%'],
+            sort: null,
+            emphasis: {
+              focus: 'ancestor',
+              itemStyle: { shadowBlur: 20, shadowColor: 'rgba(0, 0, 0, 0.3)' }
+            },
+            label: {
+              rotate: 0,
+              color: '#1a1a2e',
+              fontSize: 10,
+              fontWeight: 600
+            },
+            itemStyle: { borderRadius: 4, borderWidth: 2, borderColor: '#fff' },
+            levels: [
+              {},
+              { r0: '0%', r: '25%', label: { rotate: 0, fontSize: 12, fontWeight: 'bold' } },
+              { r0: '25%', r: '55%', label: { align: 'center', fontSize: 11 } },
+              { r0: '55%', r: '85%', label: { position: 'inside', padding: 3, silent: false, fontSize: 10 } }
+            ]
+          },
+          {
+            type: 'sunburst',
+            data: [audioData],
+            radius: [0, '70%'],
+            center: ['75%', '45%'],
+            sort: null,
+            emphasis: {
+              focus: 'ancestor',
+              itemStyle: { shadowBlur: 20, shadowColor: 'rgba(0, 0, 0, 0.3)' }
+            },
+            label: {
+              rotate: 0,
+              color: '#1a1a2e',
+              fontSize: 10,
+              fontWeight: 600
+            },
+            itemStyle: { borderRadius: 4, borderWidth: 2, borderColor: '#fff' },
+            levels: [
+              {},
+              { r0: '0%', r: '25%', label: { rotate: 0, fontSize: 12, fontWeight: 'bold' } },
+              { r0: '25%', r: '55%', label: { align: 'center', fontSize: 11 } },
+              { r0: '55%', r: '85%', label: { position: 'inside', padding: 3, silent: false, fontSize: 10 } }
+            ]
+          }
+        ]
+      };
+      
+      myChart.setOption(option);
+      
+      // Handle mouse events for description panel
+      myChart.on('mouseover', function(params) {
+        const name = params.name;
+        const description = descriptions[name];
+        if (description) {
+          const descPanel = document.getElementById('evaluation-description');
+          const descTitle = document.getElementById('evaluation-desc-title');
+          const descContent = document.getElementById('evaluation-desc-content');
+          descPanel.style.display = 'block';
+          descTitle.textContent = name.replace(/\n/g, ' ');
+          descContent.textContent = description;
+        }
+      });
+      
+      myChart.on('mouseout', function(params) {
+        document.getElementById('evaluation-description').style.display = 'none';
+      });
+      
+      // Responsive resize
+      window.addEventListener('resize', function() {
+        myChart.resize();
+      });
+    });
+  </script>
+
+</body>
+
+</html>
