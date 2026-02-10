@@ -5,8 +5,8 @@
 </p>
 
 <p align="center">
-  📄 <a href="https://arxiv.org/abs/2512.21734" target="_blank"><strong>Technical Report</strong></a> &nbsp;|&nbsp;
-  🌊 <a href="https://foundationvision.github.io/AlivePage" target="_blank"><strong>Project Page</strong></a> &nbsp;|&nbsp;
+  📄 <a href="https://arxiv.org/pdf/2602.08682" target="_blank"><strong>Technical Report</strong></a> &nbsp;|&nbsp;
+  🌊 <a href="https://foundationvision.github.io/Alive" target="_blank"><strong>Project Page</strong></a> &nbsp;|&nbsp;
   🎬 <a href="#" target="_blank"><strong>Online Demo (Coming Soon)</strong></a>
 </p>
 
@@ -142,10 +142,10 @@ The Audio DiT and Video DiT are each guided by two distinct conditions: the text
 If you find our work useful for your research, please consider citing:
 
 ```bibtex
-@article{alive,
+@article{guo2026Alive,
   title={Alive: Animate Your World with Lifelike Audio-Video Generation},
-  author={ByteDance Alive Team},
-  journal={arXiv preprint},
+  author={Ying Guo and Qijun Gan and Yifu Zhang and Jinlai Liu and Yifei Hu and Pan Xie and Dongjun Qian and Yu Zhang and Ruiqi Li and Yuqi Zhang and Ruibiao Lu and Xiaofeng Mei and Bo Han and Xiang Yin and Bingyue Peng and Zehuan Yuan},
+  journal={arXiv preprint arXiv:2602.08682},
   year={2026}
 }
 ```
