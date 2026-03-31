@@ -7,7 +7,7 @@
 <p align="center">
   📄 <a href="https://arxiv.org/pdf/2602.08682" target="_blank"><strong>Technical Report</strong></a> &nbsp;|&nbsp;
   🌊 <a href="https://foundationvision.github.io/Alive" target="_blank"><strong>Project Page</strong></a> &nbsp;|&nbsp;
-  🎬 <a href="https://discord.gg/fJkXYpyR" target="_blank"><strong>Online Demo</strong></a>
+  🎬 <a href="https://discord.gg/y9c5hsfKX" target="_blank"><strong>Online Demo</strong></a>
 </p>
 
 ---
